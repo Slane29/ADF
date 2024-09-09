@@ -76,7 +76,7 @@ cd /root/ros2_ws/ADF
 Please run the following command to source the setup files. 
 
 ```sh
-source setup/install.bash
+source install/setup.bash
 ```
 
 ### 4.2 Running the Water Level Publisher/Subscriber Nodes
