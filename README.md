@@ -63,7 +63,7 @@ cd ADF
 The following sections will describe what commands you will need to use to run the various publisher/subscriber and service/client nodes for the automatic dog feeder system. It will also describe briefly what the expected output should be. The publisher/subscriber nodes are run using launch files and thus can be run in one window. The service/client nodes however will need to be run in two separate windows.
 
 ### 4.1 Building and sourcing the workspace
-In order to run the ros workspace, you will need to build it with the following command. Make sure that you are in your workspace file path (ros2_ws) not the source folder (ros2_ws/src).
+In order to run the ros workspace, you will need to build it with the following command. Make sure that you are in your workspace file path (ros2_ws/ADF) not the source folder (ros2_ws/ADF/src).
 ```sh
 colcon build
 ```
