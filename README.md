@@ -53,6 +53,12 @@ Please use the following command to clone the git repo. Make sure you are in you
 git clone https://github.com/Slane29/ADF.git
 ```
 
+Please enter the ADF folder now with the following command.
+```sh
+cd ADF
+```
+
+
 ## 4 Running the Code
 The following sections will describe what commands you will need to use to run the various publisher/subscriber and service/client nodes for the automatic dog feeder system. It will also describe briefly what the expected output should be. The publisher/subscriber nodes are run using launch files and thus can be run in one window. The service/client nodes however will need to be run in two separate windows.
 
