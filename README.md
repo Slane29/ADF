@@ -68,13 +68,13 @@ In order to run the ros workspace, you will need to build it with the following 
 colcon build
 ```
 
-Open a new window and start the docker container using the instructions liste above (section 1.3). It is best practice to source the setup files and run the nodes in a separate terminal to the one you use to build the workspace in. For the following sections, you will use this new window. Please run the following command to source the setup files.
+Open a new window and start the docker container using the instructions listed above (section 1.2.1). It is best practice to source the setup files and run the nodes in a separate terminal to the one you use to build the workspace in. For the following sections, you will use this new window. Please run the following command to source the setup files.
 
 ```sh
 source setup/install.bash
 ```
 
-### 4.1 Running the Water Level Publisher/Subscriber Nodes
+### 4.2 Running the Water Level Publisher/Subscriber Nodes
 To run the Water Level nodes, please run the following command.
 
 ```sh
@@ -82,7 +82,7 @@ ros2 launch water_level water_level_launch.py
 ```
 You should see the publisher and subscriber outputs in one window, with each publisher output preceding the subscriber output. The water level package should publish the water level, starting at 20 and dropping to 3, before counting back up to 20. This will run in a loop. The water level subscriber should state that the dispenser is closed when the water is depleting to 3, the water dispenser is open once the level reaches 3, and that the dispenser closes once more after reaching the water level 15. This too should run in a loop. Use ctrl + C to quit at any time.
 
-### 4.2 Running the Food Level Publisher/Subscriber Nodes
+### 4.3 Running the Food Level Publisher/Subscriber Nodes
 To run the Food Level nodes, please run the following command.
 
 ```sh
@@ -91,7 +91,7 @@ ros2 launch food_level food_level_launch.py
 You should see the publisher and subscriber outputs in one window, with each publisher output preceding the subscriber output. The food level package should publish whether the hit sensor has been triggered (this is randomised) along with a timestamp (that increases by one each time). The food level subscriber should state that the dispenser is closed when no hit is detected, and should state that the dispenser is open when a hit is detected and it has not been opened in more than 5 time intervals. If a hit is detected by the dispenser was opened within the last 5 time intervals, the subscriber will state that a hit has been detected but the dog has received enough food.
 
 
-### 4.3 Running the Record Doggo Publisher/Subscriber Nodes
+### 4.4 Running the Record Doggo Publisher/Subscriber Nodes
 To run the Record Doggo nodes, please run the following command.
 
 ```sh
@@ -99,7 +99,7 @@ ros2 launch record_doggo record_doggo_launch.py
 ```
 You should see the publisher and subscriber outputs in one window, with each publisher output preceding the subscriber output. The record doggo package should publish mock data of the ultrasonic sensor. The publisher is designed to publish mock data by publishing a distance of 30 for the first 5 time intervals, before the dog hypothetically arrives and it begins publishing a distance of 3. The dog hypothetically leaves at time 15, after which the publisher will publish a distance of 30 again continuously. The subscriber will show that video is being recorded when it receives data from the publisher that indicates the dog is at the feeder.
 
-### 4.4 Running the Sensor Check Service/Client Nodes
+### 4.5 Running the Sensor Check Service/Client Nodes
 The Sensor Check is designed to check whether the sensors are working or not. This is a service/client relationship and will need to be run in two different windows. Please open a new terminal and enter the container following the instructions listed in section 1.3, and source the setup files as described in section 4.1.
 
 In the first window, run the following command to start up the service. This means that the service is ready and waiting for a client request.
