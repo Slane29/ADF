@@ -111,10 +111,10 @@ Please open a new terminal and enter the container following the instructions li
 In the first window, run the following command to start up the service. This means that the service is ready and waiting for a client request.
 
 ```sh
-ros2 run sensor_check server
+ros2 run sensor_check service
 ```
 
-In the second window, run the following command to send a request from the client to the server. You can enter any number in <arg> to check that number sensor in the system.
+In the second window, run the following command to send a request from the client to the server. You can enter any number in arg to check that number sensor in the system.
 
 ```sh
 ros2 run sensor_check client <arg>
