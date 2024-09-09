@@ -7,7 +7,7 @@ The code in this repo consists of four ROS 2 packages that can be run inside a d
 In order to run this code, it is assumed that you already have docker and git installed. If not, please install them now.
 
 ## 1 Setting up the Docker Container
-Firstly, you will need to create a new docker container with an image of ROS 2 Iron.
+Firstly, you will need to create a new docker container with an image of ROS 2 Iron. Please open the docker desktop app and leave it running in the background.
 
 ### 1.1 Pull docker image
 Please open a terminal window and run the following command to pull the ROS 2 iron docker image:
