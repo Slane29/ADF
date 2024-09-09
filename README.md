@@ -45,8 +45,8 @@ echo "source /opt/ros/iron/setup.bash" >> ~/.bashrc
 ### 2.2 Making the ROS 2 workspace
 To create a workspace to clone the code from github to, please use the following command.
 ```sh
-mkdir root/ros2_ws
-cd root/ros2_ws
+mkdir /root/ros2_ws
+cd /root/ros2_ws
 ```
 
 ## 3 Clone code from github
