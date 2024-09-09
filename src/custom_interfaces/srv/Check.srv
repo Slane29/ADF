@@ -1,0 +1,5 @@
+#Custom srv file for sensor_check. Takes sensor number as input (indicating which sensor to test) and relays the status of that sensor (online or offline)
+
+int64 sensor_number
+---
+int64 status
