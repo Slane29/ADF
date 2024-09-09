@@ -121,8 +121,8 @@ ros2 run sensor_check client <arg>
 ```
 
 After sending the client request:
-- You should see the statement "Incoming request is sensor <arg> online?" in the window where you ran the service.
-- You should see the response "Result of sensor check: for sensor number <arg>, sensor is online"in the window where you ran the client.
+- You should see the statement "Incoming request is sensor arg online?" in the window where you ran the service.
+- You should see the response "Result of sensor check: for sensor number arg, sensor is online"in the window where you ran the client.
 
 
 
