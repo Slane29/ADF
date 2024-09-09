@@ -70,7 +70,7 @@ colcon build
 
 Open a new window and start the docker container using the instructions listed above (section 1.2.1). It is best practice to source the setup files and run the nodes in a separate terminal to the one you use to build the workspace in. For the following sections, you will use this new window. Please run the following command to enter the workspace.
 ```sh
-cd root/ros2_ws/ADF
+cd /root/ros2_ws/ADF
 ```
 
 Please run the following command to source the setup files. 
