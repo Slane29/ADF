@@ -106,7 +106,7 @@ You should see the publisher and subscriber outputs in one window, with each pub
 
 ### 4.5 Running the Sensor Check Service/Client Nodes
 The Sensor Check is designed to check whether the sensors are working or not. This is a service/client relationship and will need to be run in two different windows. 
-Please open a new terminal and enter the container following the instructions listed in section 1.2.1, and source the setup files as described in section 4.1.
+Please open a new terminal and enter the container following the instructions listed in section 1.2.1, and source the setup files as described in section 4.1 (do not do colcon build).
 
 In the first window, run the following command to start up the service. This means that the service is ready and waiting for a client request.
 
