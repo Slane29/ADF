@@ -21,7 +21,7 @@ Run the following command in order to start the docker container for the first t
 Docker run --name <your_container_name> -it osrf/ros:iron-desktop
 ```
 
-### 1.3 Entering the Docker container again
+### 1.2.1 Entering the Docker container again
 If you would like to enter this docker container again in a new terminal window or after closing the window, run the following command. This is the command you will use to enter the docker container from here on.
 
 ```sh
@@ -43,8 +43,8 @@ echo "source /opt/ros/iron/setup.bash" >> ~/.bashrc
 ### 2.2 Making the ROS 2 workspace
 To create a workspace to clone the code from github to, please use the following command.
 ```sh
-mkdir ros2_ws
-cd ros2_ws
+mkdir root/ros2_ws
+cd root/ros2_ws
 ```
 
 ## 3 Clone code from github
