@@ -2,6 +2,8 @@
 
 
 ## Getting Started
+The code in this repo consists of four ROS 2 packages that can be run inside a docker container. The code is designed to simulate control of an automatic dog feeder, that has both a food and water dispenser, as well as a camera to record the dog at the feeder.
+
 In order to run this code, it is assumed that you already have docker and git installed. If not, please install them now.
 
 ## 1 Setting up the Docker Container
