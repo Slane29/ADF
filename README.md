@@ -105,7 +105,8 @@ ros2 launch record_doggo record_doggo_launch.py
 You should see the publisher and subscriber outputs in one window, with each publisher output preceding the subscriber output. The record doggo package should publish mock data of the ultrasonic sensor. The publisher is designed to publish mock data by publishing a distance of 30 for the first 5 time intervals, before the dog hypothetically arrives and it begins publishing a distance of 3. The dog hypothetically leaves at time 15, after which the publisher will publish a distance of 30 again continuously. The subscriber will show that video is being recorded when it receives data from the publisher that indicates the dog is at the feeder.
 
 ### 4.5 Running the Sensor Check Service/Client Nodes
-The Sensor Check is designed to check whether the sensors are working or not. This is a service/client relationship and will need to be run in two different windows. 
+The Sensor Check is designed to check whether the sensors are working or not. This is a service/client relationship and will need to be run in two different windows.
+
 Please open a new terminal and enter the container following the instructions listed in section 1.2.1, and source the setup files as described in section 4.1 (do not do colcon build).
 
 In the first window, run the following command to start up the service. This means that the service is ready and waiting for a client request.
