@@ -10,7 +10,7 @@ In order to run this code, it is assumed that you already have docker and git in
 Firstly, you will need to create a new docker container with an image of ROS 2 Iron.
 
 ### 1.1 Pull docker image
-Run the following command to pull the ROS 2 iron docker image:
+Please open a terminal window and run the following command to pull the ROS 2 iron docker image:
 
 ```sh
 docker pull osrf/ros:iron-desktop
